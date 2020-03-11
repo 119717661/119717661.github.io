@@ -1,0 +1,123 @@
+		/* 
+		IS1113
+		Piotr Janus
+		S-ID: 119717661
+		cv.html css sheet  
+		
+		*/
+ * {
+	 
+	 margin: 0;
+	 padding: 0;
+     font-family: "Montserrat", sans-serif;
+
+ }
+ 		/* Body - background section  */
+		
+body,html {
+background: #00578C;
+background: -moz-linear-gradient(-45deg, #00578C 0%, #33D1FF 48%, #FF848C 100%);
+background: -webkit-linear-gradient(-45deg, #00578C 0%, #33D1FF 48%, #FF848C 100%);
+background: linear-gradient(135deg, #00578C 0%, #33D1FF 48%, #FF848C 100%);
+background-size: cover;
+
+}
+
+		/* Navigation bar/ top+bottom   */
+.jumbotron {
+background: rgb(240,240,240);
+padding: 10px;
+background-size: cover;
+height: 120px;
+}
+
+		/*   */
+.container{
+    z-index:0;
+	margin: 0;
+}
+.collapse{
+
+}
+
+#pInfo {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 25px;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: italic;
+font-variant: small-caps;
+text-transform: none;
+
+}
+#text1 {
+	position: sticky;
+width: 90%;
+}
+
+#text2 {
+	position: sticky;
+	width: 90%;
+	
+}
+#text3 {
+	position: sticky;
+	width: 90%;
+}
+#text4 {
+	position: sticky;
+	width: 90%;
+}
+#text5 {
+	position: sticky;
+	width: 90%;
+}
+
+.col-sm-8{
+  column-width:auto;
+  column-fill: auto;
+  position: sticky;
+}
+.col-sm-9{
+       column-fill: auto;
+	   column-width:auto;
+  position: sticky;
+
+
+
+}
+
+.col-sm-10{
+       column-fill: auto;
+	   column-width:auto;
+  position: sticky;
+
+}
+
+.col-sm-11{       column-fill: auto;
+column-width:auto;
+  position: sticky;
+
+}
+	
+.col-sm-12{       column-fill: auto;
+column-width:auto;
+  position: sticky;
+}
+
+
+.colorlib-experience {
+	  padding-top: 4em;
+  padding-bottom: 9em;
+  clear: both;
+  width: 100%;
+  display: block; }
+  @media screen and (max-width: 768px) {
+    .colorlib-experience, {
+      padding-top: 5em;
+      padding-bottom: 8em; } }
+
+  
