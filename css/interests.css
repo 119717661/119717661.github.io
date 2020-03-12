@@ -2,23 +2,22 @@
 		IS1113
 		Piotr Janus
 		S-ID: 119717661
-		index.html css sheet  
+		interests.html css sheet  
 		
-		Part of the css which helped me with positioning was taken from w3schools.
+		Part of the css which helped me with positioning was taken from sites:
+		https://www.w3schools.com/css/css3_box-sizing.asp
+		https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+		https://css-tricks.com/when-using-important-is-the-right-choice/
 		*/
-@charset "UTF-8";
 
-	html, body, div, span, applet, object, iframe, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+	html, body, div, span, h2, h3, h4, h5, h6, p, img, center, ul, li{
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
-	}
-
-	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-		display: block;
 	}
 
 	body {
@@ -33,10 +32,6 @@
 		quotes: none;
 	}
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
 
 	table {
 		border-collapse: collapse;
@@ -90,9 +85,6 @@
 		/* Banner */
 
 	#banner {
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
 		align-items: center;
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -101,10 +93,10 @@
 		justify-content: center;
 		padding: 0em 4em 0em 4em;
 		min-height: 0vh;
-background: #3E1B11;
-background: -moz-linear-gradient(-45deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
-background: -webkit-linear-gradient(-45deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
-background: linear-gradient(135deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
+		background: #3E1B11;
+		background: -moz-linear-gradient(-45deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
+		background: -webkit-linear-gradient(-45deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
+		background: linear-gradient(135deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -113,18 +105,14 @@ background: linear-gradient(135deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
 		text-align: center;
 		overflow: hidden;
 	}
-
-			#banner .more:hover {
-				background-color: rgba(255, 255, 255, 0.05);
-				border: 1px solid #fff;
-				color: #FFF;
-			}
 /* Main */
 
 	#main {
 		padding: 4em 0 2em 0;
 	}
 	
+	
+	/* jQuerry styling  */
 	.fotorama {
 
 		width: 100%;
@@ -166,73 +154,18 @@ background: linear-gradient(135deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
 			border-radius: 0;
 			padding: 0;
 		}
-		ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: center-left;
-}
 
 li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
 }
 
 li a:hover {
   background-color: #111;
 }
 
-/* Box */
-
-	.box {
-		border-radius: 4px;
-		margin-bottom: 2em;
-		background: #2c2c32;
-		text-align: center;
-		position: relative;
-	}
-
-		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
-			margin-bottom: 0;
-		}
-
-		.box .image.fit {
-			margin: 0;
-		}
-
-		.box .image img {
-			border-radius: 4px 4px 0 0;
-		}
-
-		.box .inner {
-			padding: 1.5em;
-			width: 100% !important;
-		}
-
-			@media screen and (max-width: 480px) {
-
-				.box .inner {
-					padding: 1em;
-				}
-
-			}
-
-		.box.alt {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-		}
-		
 		/* Style the navbar */
 .navbar {
   overflow: hidden;
@@ -243,11 +176,8 @@ li a:hover {
 /* Navbar links */
 .navbar a {
   float: center-left;
-  display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 1em;
-  text-decoration: none;
     position: sticky;
 }
 

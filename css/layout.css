@@ -4,6 +4,8 @@
 		S-ID: 119717661
 		cv.html css sheet  
 		
+		background color was created by : https://html-css-js.com/css/generator/gradient/
+		
 		*/
  * {
 	 
@@ -24,7 +26,7 @@ background-size: cover;
 }
 
 		/* Navigation bar/ top+bottom   */
-.jumbotron {
+.banner {
 background: rgb(240,240,240);
 padding: 10px;
 background-size: cover;
@@ -119,5 +121,9 @@ column-width:auto;
     .colorlib-experience, {
       padding-top: 5em;
       padding-bottom: 8em; } }
+	  
+.home{
+	width:50%;
+	]
 
   
