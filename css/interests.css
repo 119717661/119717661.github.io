@@ -7,8 +7,11 @@
 		Part of the css which helped me with positioning was taken from sites:
 		https://www.w3schools.com/css/css3_box-sizing.asp
 		https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
-		https://css-tricks.com/when-using-important-is-the-right-choice/
 		*/
+
+		*{
+					box-sizing: border-box;
+		}
 
 
 	html, body, div, span, h2, h3, h4, h5, h6, p, img, center, ul, li{
@@ -33,46 +36,29 @@
 	}
 
 
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
-	}
+
+header {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 33px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #312A85;
+font-weight: 700;
+text-decoration: none;
+font-style: italic;
+font-variant: small-caps;
+text-transform: none;
+}
+
 
 	body {
-		-webkit-text-size-adjust: none;
+		background: #473550;
+background: -moz-linear-gradient(-45deg, #473550 0%, #00014D 50%, #C5C5C5 100%);
+background: -webkit-linear-gradient(-45deg, #473550 0%, #00014D 50%, #C5C5C5 100%);
+background: linear-gradient(135deg, #473550 0%, #00014D 50%, #C5C5C5 100%);
 	}
 	
-	* Box Model */
-
-	*, *:before, *:after {
-		-moz-box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
-	}
-
-/* Basic */
-
-	@-ms-viewport {
-		width: device-width;
-	}
-
-	body {
-		-ms-overflow-style: scrollbar;
-	}
-
-	@media screen and (max-width: 480px) {
-
-		html, body {
-			min-width: 320px;
-		}
-
-	}
-
-	body {
-		background: #202024;
-	}
-	
-		body, input, select, textarea {
+		body, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		font-family: "Source Sans Pro", sans-serif;
 		font-size: 14pt;
@@ -86,12 +72,8 @@
 
 	#banner {
 		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
 		justify-content: center;
-		padding: 0em 4em 0em 4em;
 		min-height: 0vh;
 		background: #3E1B11;
 		background: -moz-linear-gradient(-45deg, #3E1B11 0%, #98A5A9 50%, #000000 100%);
@@ -105,11 +87,7 @@
 		text-align: center;
 		overflow: hidden;
 	}
-/* Main */
 
-	#main {
-		padding: 4em 0 2em 0;
-	}
 	
 	
 	/* jQuerry styling  */
@@ -138,7 +116,7 @@
 
 		.fotorama .inner {
 			padding: 1.5em;
-			width: 100% !important;
+			width: 100% 
 		}
 
 			@media screen and (max-width: 480px) {
@@ -156,30 +134,43 @@
 		}
 
 li a {
-  display: block;
+
   color: white;
   text-align: center;
   padding: 14px 16px;
 }
 
-li a:hover {
-  background-color: #111;
-}
 
 		/* Style the navbar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+background: #714134;
+background: -moz-linear-gradient(-45deg, #714134 0%, #D2D2D2 30%, #000000 100%);
+background: -webkit-linear-gradient(-45deg, #714134 0%, #D2D2D2 30%, #000000 100%);
+background: linear-gradient(135deg, #714134 0%, #D2D2D2 30%, #000000 100%);
   position: sticky;
 }
 
 /* Navbar links */
 .navbar a {
-  float: center-left;
+  float: left;
   color: #f2f2f2;
   text-align: center;
     position: sticky;
+			text-decoration: none;
+		white-space: nowrap;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #312A85;
+font-weight: 700;
+text-decoration: none;
+font-style: italic;
+font-variant: small-caps;
+text-transform: none;
 }
+
 
 .InterestText {
   position: relative;

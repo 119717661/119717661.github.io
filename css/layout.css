@@ -38,9 +38,6 @@ height: 120px;
     z-index:0;
 	margin: 0;
 }
-.collapse{
-
-}
 
 #pInfo {
 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -83,45 +80,8 @@ width: 90%;
   column-fill: auto;
   position: sticky;
 }
-.col-sm-9{
-       column-fill: auto;
-	   column-width:auto;
-  position: sticky;
 
 
-
-}
-
-.col-sm-10{
-       column-fill: auto;
-	   column-width:auto;
-  position: sticky;
-
-}
-
-.col-sm-11{       column-fill: auto;
-column-width:auto;
-  position: sticky;
-
-}
-	
-.col-sm-12{       column-fill: auto;
-column-width:auto;
-  position: sticky;
-}
-
-
-.colorlib-experience {
-	  padding-top: 4em;
-  padding-bottom: 9em;
-  clear: both;
-  width: 100%;
-  display: block; }
-  @media screen and (max-width: 768px) {
-    .colorlib-experience, {
-      padding-top: 5em;
-      padding-bottom: 8em; } }
-	  
 .home{
 	width:50%;
 	]

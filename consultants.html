@@ -1,3 +1,10 @@
+<!-- 	 IS1113 Web Project:
+	Name:Piotr Janus
+	ID: 119717661
+	Subject : Consultancy
+	As i was studying jScript i decided to add interactive menu for text it doesnt work to my expectations but 
+	hopefuly it makes browsing the website more pleasant.
+  -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,61 +12,55 @@
 	<title>Super Consultancy</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!--  Font Package  --->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!--  CSS LOAD  --->
 		<link rel="stylesheet" href="css/cons.css" />
 </head>		
 <body>
+<!--- Navigation bar - Items --->
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#aboutus">About Us</a></li>
+  <li><a href="#calcForm">Calculations</a></li>
 
-
-<!-- Side Navigation -->
-	<nav class="sidebar bar-block card animate-left center" style="display:none" id="mySidebar">
-		<a href="consultants.html#aboutus" class="bar-item button " onclick="my_close()" >About Us</a> <!-- mr_close refrences js script   --->
-		<a href="#calcForm" class="bar-item button" onclick="my_close()" >Pricing</a>
-		<a href="index.html" class="bar-item button">Home Page<img src="img/home.png" /></a>
-		<button class="bar-item button" onclick="my_close()">Close <i class="fa fa-remove"></i></button>
-	</nav>
+</ul>
 
 <!-- Header -->
-	<header class="container theme padding" id="myHeader">
-	<!--  Js script Navigation function  --->
-		<i onclick="my_open()" class="fa fa-bars xlarge button theme"></i> 
+	<header class="container" id="myHeader">
 		<div class="center">
 		<hr>
 			<h4>Consultancy Agency</h4>
 		<hr>
-	</div>
-</header>
+		</div>	
+	</header>
 
 <!-- Top Box for HYPERAUTOMATION   --->
 	<div class="row-padding center margin-top">
-		<div class="third">
-			<div class="card container" style="min-height:300px">
+		<div class="infoBoxBody">
+
 				<h3>Hyperautomation</h3><br>
 					<div class="topImages"><a href="consultants.html#aboutus"><img src="img/aboutus1.png" /></a></div>
 						<p>When automation moved to<br> the forefront of most industries...</p>
 						<p>Continue<a href="consultants.html#aboutus">. . .</a></p>
-			</div>
+
 		</div>
 <!--  Top Box 2 For MultiExpirience  --->
-		<div class="third">
-			<div class="card container" style="min-height:460px">
+		<div class="infoBoxBody">
+
 				<h3>Multiexpirience</h3><br>
 					<div class="topImages"><a href="consultants.html#aboutus"><img src="img/aboutus2.png" /></a></div>
 						<p>Now, before you start thinking about Multi-experience Development.<br> I want you to list out the brands that you feel more connected to...</p>
 						<p>Continue <a href="consultants.html#aboutus">. . .</a></p>
-			</div>
+
 		</div>
 
 <!--  Top Box 3 For Distributed Cloud  --->
-		<div class="third">
-			<div class="card container" style="min-height:460px">
+		<div class="infoBoxBody">
+
 				<h3>Distributed Cloud</h3><br>
 					<div class="topImages"><a href="consultants.html#aboutus"><img src="img/aboutus3.png" /></a></div>
 						<p>Industry experts believe that together,<br> edge computing and distributed cloud improve the user experience of a network...</p>
 						<p>Continue <a href="consultants.html#aboutus">. . .</a></p>
-			</div>
+
 		</div>
 	</div>
 	
@@ -67,16 +68,17 @@
 
 <!--  Container for Information about Services  --->
 	<h2 class="center" id="aboutus">About Us</h2>
-		<div class="border">
+		<center><div class="border">
 			<div class="bar theme">
-<!--  Buttons and  js script refrence   function openCity--->
-				<button class="bar-item button testbtn padding-16" onclick="openCity(event,'Hyperautomation')">Hyperautomation</button>
-				<button class="bar-item button testbtn padding-16" onclick="openCity(event,'Multiexpirience')">Multiexpirience</button>
-				<button class="bar-item button testbtn padding-16" onclick="openCity(event,'Distributed Cloud')">Distributed Cloud</button>
-			</div>
+			<br>
+<!--  Buttons and  js script refrence   function opennav--->
+				<button class="bar-item button funButton padding-16" onclick="opennav(event,'Hyperautomation')">Hyperautomation</button>
+				<button class="bar-item button funButton padding-16" onclick="opennav(event,'Multiexpirience')">Multiexpirience</button>
+				<button class="bar-item button funButton padding-16" onclick="opennav(event,'Distributed Cloud')">Distributed Cloud</button>
+			</div></center>
 <hr>
 <!--  HYPERAUTOMATION container  --->
-	<div id="Hyperautomation" class="container city animate-opacity">
+	<div id="Hyperautomation" class="container nav animate-opanav">
 		<h2><b>Hyperautomation</b></h2>
 			<p>When automation moved to the forefront of most industries, many businesses felt reluctant to implement this new technology. 
 			Rather than focusing on the immensely broad and undeniable benefits of utilising automation for business process improvement, business leaders feared change and employees
@@ -104,7 +106,7 @@
 	</div>
 	
 <!--  MultiExpirience Container  --->
-	<div id="Multiexpirience" class="container city animate-opacity">
+	<div id="Multiexpirience" class="container nav animate-opanav">
 		<h2><b>Multiexpirience</b></h2>
 			<p><b>Future of App Development is Multi-experience:</b></p>
 			<p>Now, before you start thinking about Multi-experience Development. I want you to list out the brands that you feel more connected to.
@@ -153,7 +155,7 @@
 	</div>
 
 <!-- Distributed Cloud Container   --->
-	<div id="Distributed Cloud" class="container city animate-opacity">
+	<div id="Distributed Cloud" class="container nav animate-opanav">
 		<h2><b>Distributed Cloud</b></h2>
 			<p>Industry experts believe that together, edge computing and distributed cloud improve the user experience of a network.
 			While these technologies are related, they are distinct and unique.</p>
@@ -197,8 +199,8 @@
 	<h2 class="center" id="Pricing">Pricing</h2>
 <hr>
 	<center><div class="row-padding center margin-top">
-				<div class="third">
-					<div class="card container" style="min-height:300px">
+				<div class="infoBoxBody">
+					<div class="InfoBox" style="min-height:300px">
 						<div class="row border center">
 							<div class="container blue border">
 								<h2 class="center" id="Pricing"><b>Calculator</b></h2> 
@@ -241,35 +243,19 @@
 <!-- JAVA SCRIPT SECTION    --->
 <script>
 
-// Side navigation(opening nav bar)
-
-function my_open() {
-  var x = document.getElementById("mySidebar");
-	x.style.width = "100%";
-	x.style.fontSize = "40px";
-	x.style.paddingTop = "10%";
-	x.style.display = "block";
-}
-
-//Close function(closing nav bar)
-
-function my_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
 // Function for changing tabs 
 
-function openCity(evt, cityName) {
+function opennav(evt, navName) {
   var i;
-  var x = document.getElementsByClassName("city");
+  var x = document.getElementsByClassName("nav");
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = "none";
 		}
-  var activebtn = document.getElementsByClassName("testbtn");
+  var activebtn = document.getElementsByClassName("funButton");
 	for (i = 0; i < x.length; i++) {
 		activebtn[i].className = activebtn[i].className.replace(" dark-grey", "");
 		}
-			document.getElementById(cityName).style.display = "block";
+			document.getElementById(navName).style.display = "block";
 			evt.currentTarget.className += " dark-grey";
 }
 
